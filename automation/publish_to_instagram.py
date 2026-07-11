@@ -89,6 +89,15 @@ def handle(job, jobname):
         out["error"] = f"token check failed — regenerate IG token + update the IG_TOKEN secret: {me}"
         return out
     jtype = job.get("type", "dry_run")
+    if jtype == "diag":
+        import hashlib
+        out["token_len"] = len(TOKEN)
+        out["token_sha8"] = hashlib.sha256(TOKEN.encode()).hexdigest()[:8]
+        out["igid_val"] = IGID
+        out["refresh_probe"] = api("refresh_access_token",
+            {"grant_type": "ig_refresh_token", "access_token": TOKEN})
+        out["status"] = "diag_done"
+        return out
     if jtype == "dry_run":
         out["status"] = "dry_run_ok"
         return out
