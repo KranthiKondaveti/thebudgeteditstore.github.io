@@ -1,0 +1,24 @@
+{
+ "job": "2026-07-11_dryrun",
+ "started": "2026-07-11T21:03:50Z",
+ "quota": {
+  "_http_error": 401,
+  "error": {
+   "message": "Failed to decrypt",
+   "type": "OAuthException",
+   "code": 190,
+   "fbtrace_id": "Al0AQsCmw_WunPbko8GnkSN"
+  }
+ },
+ "account": {
+  "_http_error": 401,
+  "error": {
+   "message": "Failed to decrypt",
+   "type": "OAuthException",
+   "code": 190,
+   "fbtrace_id": "AAXvqAeyStBv-ZbCjz4Kw0A"
+  }
+ },
+ "status": "error",
+ "error": "token check failed \u2014 regenerate IG token + update the IG_TOKEN secret: {'_http_error': 401, 'error': {'message': 'Failed to decrypt', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AAXvqAeyStBv-ZbCjz4Kw0A'}}"
+}
