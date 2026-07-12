@@ -1,0 +1,24 @@
+{
+ "job": "2026-07-12_R9",
+ "started": "2026-07-12T17:19:38Z",
+ "quota": {
+  "_http_error": 400,
+  "error": {
+   "message": "API access blocked.",
+   "type": "OAuthException",
+   "code": 200,
+   "fbtrace_id": "Aw6_ODD8_pEOcfdQwwiT_Hh"
+  }
+ },
+ "account": {
+  "_http_error": 400,
+  "error": {
+   "message": "API access blocked.",
+   "type": "OAuthException",
+   "code": 200,
+   "fbtrace_id": "AakCAKB3GCvwoyRzM2rMlxu"
+  }
+ },
+ "status": "error",
+ "error": "token check failed \u2014 regenerate IG token + update the IG_TOKEN secret: {'_http_error': 400, 'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AakCAKB3GCvwoyRzM2rMlxu'}}"
+}
